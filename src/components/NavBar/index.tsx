@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, SidebarNav, SidebarSocial, Sidebar, CloseSign} from './Elements'; 
+import {Nav, NavLink, Bars, NavMenu, NavBtn, SocialMediaLink, SidebarNav, SidebarSocial, Sidebar, CloseSign} from './Elements'; 
 import {faFacebookF, faInstagram, faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -31,18 +31,18 @@ const NavBar = () => {
                     </NavLink>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to="/">
+                    <SocialMediaLink href="https://www.facebook.com/VladIoanNicolaescu" target="_blank">
                         <FontAwesomeIcon icon={faFacebookF} className="icon"/>
-                    </NavBtnLink>
-                    <NavBtnLink to="/">
+                    </SocialMediaLink>
+                    <SocialMediaLink href="https://www.instagram.com/vlad.nicolaescu/" target="_blank">
                         <FontAwesomeIcon icon={faInstagram} className="icon"/>
-                    </NavBtnLink>
-                    <NavBtnLink to="/">
+                    </SocialMediaLink>
+                    <SocialMediaLink href="https://linkedin.com/in/vlad-nicolaescu/" target="_blank">
                         <FontAwesomeIcon icon={faLinkedin} className="icon"/>
-                    </NavBtnLink>
-                    <NavBtnLink to="/">
+                    </SocialMediaLink>
+                    <SocialMediaLink href="https://github.com/vladioannicolaescu/" target="_blank">
                         <FontAwesomeIcon icon={faGithub} className="icon"/>
-                    </NavBtnLink>
+                    </SocialMediaLink>
                 </NavBtn>
             </Nav>
 
@@ -62,18 +62,18 @@ const NavBar = () => {
                     </NavLink>
 
                     <SidebarSocial>
-                        <NavBtnLink to="/">
+                        <SocialMediaLink href="https://www.facebook.com/VladIoanNicolaescu" target="_blank">
                             <FontAwesomeIcon icon={faFacebookF} className="icon"/>
-                        </NavBtnLink>
-                        <NavBtnLink to="/">
+                        </SocialMediaLink>
+                        <SocialMediaLink href="https://www.instagram.com/vlad.nicolaescu/" target="_blank">
                             <FontAwesomeIcon icon={faInstagram} className="icon"/>
-                        </NavBtnLink>
-                        <NavBtnLink to="/">
+                        </SocialMediaLink>
+                        <SocialMediaLink href="https://linkedin.com/in/vlad-nicolaescu/" target="_blank">
                             <FontAwesomeIcon icon={faLinkedin} className="icon"/>
-                        </NavBtnLink>
-                        <NavBtnLink to="/">
+                        </SocialMediaLink>
+                        <SocialMediaLink href="https://github.com/vladioannicolaescu/" target="_blank">
                             <FontAwesomeIcon icon={faGithub} className="icon"/>
-                        </NavBtnLink>
+                        </SocialMediaLink>
                     </SidebarSocial>
                     
                 </SidebarNav>

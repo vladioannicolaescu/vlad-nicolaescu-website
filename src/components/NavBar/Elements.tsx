@@ -80,7 +80,7 @@ export const NavBtn = styled.nav`
     }
 `;
 
-export const NavBtnLink = styled(Link)`
+export const SocialMediaLink = styled.a`
     border-radius: 4px;
     padding: 18px 7px;
     color: #fff;
