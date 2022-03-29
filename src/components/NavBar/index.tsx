@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Nav, NavLink, Bars, NavMenu, NavBtn, SocialMediaLink, SidebarNav, SidebarSocial, Sidebar, CloseSign} from './Elements'; 
+import {Nav, NavAnchor, Bars, NavMenu, NavBtn, SocialMediaLink, SidebarNav, SidebarSocial, Sidebar, CloseSign} from './Elements'; 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {SectionLinks, SocialMediaLinks} from './Links';
 
@@ -10,18 +10,18 @@ const NavBar = () => {
     const showSidebar = () => setSidebar(!sidebar);
 
     return (
-        <>
+        <div className="navigation">
             <Nav>
-                <NavLink to ="/">
+                <NavAnchor href ="#home">
                     <img src={require("../../images/image-removebg-preview.png")} alt="logo" />
-                </NavLink>
+                </NavAnchor>
                 {!sidebar ? <Bars onClick={showSidebar}/> : <CloseSign onClick={showSidebar}/>}
                 <NavMenu>
                     {SectionLinks.map((item, index) => {
                         return (
-                            <NavLink to={item.path}>
+                            <NavAnchor href={item.path}>
                                 {item.title}
-                            </NavLink>
+                            </NavAnchor>
                         );
                     })}
                 </NavMenu>
@@ -40,9 +40,9 @@ const NavBar = () => {
                 <SidebarNav className={sidebar ? 'sidebar-active' : 'sidebar'}>
                     {SectionLinks.map((item, index) => {
                         return (
-                            <NavLink to={item.path} className="menu-link" onClick={showSidebar}>
+                            <NavAnchor href={item.path} className="menu-link" onClick={showSidebar}>
                                 {item.title}
-                            </NavLink>
+                            </NavAnchor>
                         );
                     })}
 
@@ -58,7 +58,7 @@ const NavBar = () => {
                     
                 </SidebarNav>
             </Sidebar>
-        </>
+        </div>
     )
 }
 

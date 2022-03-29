@@ -1,25 +1,24 @@
 import {faFacebookF, faInstagram, faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 export const SectionLinks = [
   {
     title: 'Home',
-    path: '/',
+    path: '#home',
     className: 'nav-link'
   },
   {
     title: 'About Me',
-    path: '/about',
+    path: '#about',
     className: 'nav-link'
   },
   {
     title: 'Portfolio',
-    path: '/portfolio',
+    path: '#portfolio',
     className: 'nav-link'
   },
   {
     title: 'Contact',
-    path: '/contact',
+    path: '#contact',
     className: 'nav-link'
   },
 ];

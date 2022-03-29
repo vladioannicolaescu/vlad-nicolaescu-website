@@ -1,13 +1,33 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import {BrowserRouter as Router} from 'react-router-dom'
+import HomeSection from './Sections/Home';
+import AboutSection from './Sections/About';
+import PortfolioSection from './Sections/Portfolio';
+import ContactSection from './Sections/Contact';
 
 function App() {
   return (
-    <Router>
+    // For single-page implementation:
+    <>
       <NavBar/>
-    </Router>
+      <HomeSection/>
+      <AboutSection/>
+      <PortfolioSection/>
+      <ContactSection/>
+    </>
+
+    // For multi-page implementation: 
+
+    // <Router>
+    //   <NavBar/>
+    //   <Routes>
+    //       <Route path='/' element={<HomeSection/>} />
+    //       <Route path='/about' element={<AboutSection/>} />
+    //       <Route path='/portfolio' element={<PortfolioSection/>} />
+    //       <Route path='/contact' element={<ContactSection/>} />
+    //   </Routes>
+    // </Router>
   );
 }
 

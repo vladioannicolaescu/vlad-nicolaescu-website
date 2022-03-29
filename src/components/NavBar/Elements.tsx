@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { NavLink as Link } from 'react-router-dom'
 import {FaBars, FaTimes} from 'react-icons/fa'
 
 export const Nav = styled.nav`
@@ -11,7 +10,8 @@ export const Nav = styled.nav`
     z-index: 10;
 `;
 
-export const NavLink = styled(Link)`
+// export const NavLink = styled(Link)`
+export const NavAnchor = styled.a`
     color: #fff;
     display: flex;
     align-items: center;
@@ -129,7 +129,7 @@ export const SidebarSocial = styled.div`
 
 export const Sidebar = styled.div`
     .sidebar-active {
-        position: relative;
+        top: 80px;
         right: 0;
         transition: 350ms;
     }
