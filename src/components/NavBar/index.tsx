@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Nav, NavAnchor, Bars, NavMenu, NavBtn, SocialMediaLink, SidebarNav, SidebarSocial, Sidebar, CloseSign} from './Elements'; 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {SectionLinks, SocialMediaLinks} from './Links';
+import {SectionLinks, SocialMediaLinks} from '../Links';
 
 const NavBar = () => {
 

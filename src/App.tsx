@@ -5,6 +5,7 @@ import HomeSection from './Sections/Home';
 import AboutSection from './Sections/About';
 import PortfolioSection from './Sections/Portfolio';
 import ContactSection from './Sections/Contact';
+import FooterBar from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutSection/>
       <PortfolioSection/>
       <ContactSection/>
+      <FooterBar/>
     </>
 
     // For multi-page implementation: 
