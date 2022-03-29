@@ -7,7 +7,7 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     padding: 0.5rem calc((100vw - 1000px) / 2);
-    z-index: 10;
+    z-index: 100;
 `;
 
 // export const NavLink = styled(Link)`
@@ -110,13 +110,14 @@ export const SidebarNav = styled.div`
     margin-right: 0;
     padding-top: 20vh;
     right: -100%;
+    z-index: 100;
 
     .menu-link {
         justify-content: center;
         font-size: 2rem;
         height: 75px;
     }
-`
+`;
 
 export const SidebarSocial = styled.div`
     margin: 100px auto;
@@ -125,17 +126,18 @@ export const SidebarSocial = styled.div`
         margin: 0 1vw;
         height: 5vw;
     }
-`
+`;
 
 export const Sidebar = styled.div`
     .sidebar-active {
         top: 80px;
         right: 0;
         transition: 350ms;
+        z-index: 9999;
     }
 
     @media screen and (min-width: 1000px) {
         display: none;
     }
-`
+`;
 

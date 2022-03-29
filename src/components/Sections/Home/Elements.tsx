@@ -84,3 +84,26 @@ export const Subtitle = styled.h2`
     text-align: center;
     font-weight: 500;
 `;
+
+export const Locations = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    width: 100%;
+`;
+
+export const Location = styled.h2`
+    color: white;
+    margin: 10px 20px; 
+    font-weight: 500;
+    font-size: 2rem;
+`;
+
+export const Dot = styled.div`
+    content: '';
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    border-radius: 50%;
+`;
