@@ -9,15 +9,57 @@ export const Container = styled.div`
     height: fit-content;
 `;
 
-export const AwardsLine = styled.div`
+export const SkillsLine = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    overflow: auto;
+    white-space: nowrap;
+    width: 80vw;
+    padding: 30px 0;
+    margin: 25px 0;
+    background: #0072ce;
+    border: 2px solid #0061bd;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+`;
 
-    @media screen and (max-width: 1000px) {
-        flex-direction: column;
-    }
+export const SkillBox = styled.div`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: normal;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.5);
+    min-width: 250px;
+    height: 350px;
+    padding: 20px;
+    margin: 20px;
+`;
+
+export const SkillImage = styled.img`
+    height: 100px;
+`;
+
+export const SkillTitle = styled.h1`
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 5px auto;
+`;
+
+export const SkillLevel = styled.h4`
+    font-weight: 600;
+    margin: 5px auto;
+
+`;
+
+export const SkillDescription = styled.p`
+    font-weight: 500;
+    margin: 5px auto;
 `;
 
 export const HorizontalLine = styled.div`
@@ -32,6 +74,17 @@ export const HorizontalLine = styled.div`
     background: #eeeeee;
     border-radius: 10px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+    }
+`;
+
+export const AwardsLine = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
     @media screen and (max-width: 1000px) {
         flex-direction: column;
@@ -75,19 +128,23 @@ export const CompanyInfo = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin: 10px auto;
 `;
 
 export const Position = styled.h1`
     font-weight: 600;
+    margin: 2.5px auto;
 `;
 
 export const Period = styled.h2`
     font-weight: 500;
+    margin: 2.5px auto;
 `;
 
 export const Location = styled.h3`
     font-weight: 500;
+    margin: 2.5px auto;
 `;
 
 export const Award = styled.div`

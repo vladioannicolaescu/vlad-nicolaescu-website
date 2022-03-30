@@ -7,10 +7,8 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     padding: 0.5rem calc((100vw - 1000px) / 2);
-    z-index: 100;
 `;
 
-// export const NavLink = styled(Link)`
 export const NavAnchor = styled.a`
     color: #fff;
     display: flex;

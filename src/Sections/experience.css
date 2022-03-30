@@ -1,3 +1,22 @@
 * {
     font-family: 'Cantata One';
 }
+
+.skillsList::-webkit-scrollbar {
+    height: 10px;
+}
+
+.skillsList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 100px 100px 100px 100px;
+}
+
+.skillsList::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 100px 100px 100px 100px;
+}
+
+.tool {
+    position: absolute;
+    bottom: 50px;
+}

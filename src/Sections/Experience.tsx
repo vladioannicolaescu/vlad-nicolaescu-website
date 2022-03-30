@@ -1,7 +1,8 @@
 import React from 'react';
 import './experience.css';
-import {Container, AwardsLine, Subtitle, HorizontalLine, Side, Award, CompanyImage, CompanyInfo, Position, Period, Location} from '../components/Sections/Experience/Elements';
+import {Container, AwardsLine, Subtitle, HorizontalLine, Side, Award, CompanyImage, CompanyInfo, Position, Period, Location, SkillsLine, SkillBox, SkillTitle, SkillLevel, SkillDescription, SkillImage} from '../components/Sections/Experience/Elements';
 import {TitleLine, DesignLine, Title} from '../components/utils/Elements';
+import {ProgrammingSkills, ProgrammingTools} from '../components/Skills';
 
 function ExperienceSection() {
     return (
@@ -16,6 +17,31 @@ function ExperienceSection() {
                 </TitleLine>
 
                 <Subtitle>Skills & Tools</Subtitle>
+                <Container>
+                    <SkillsLine className="skillsList">
+                        {ProgrammingSkills.map((item, index) => {
+                            return (
+                                <SkillBox key={item.key}>
+                                    <SkillImage src={item.image}/>
+                                    <SkillTitle>{item.title}</SkillTitle>
+                                    <SkillLevel>Level: {item.level}</SkillLevel>
+                                    <SkillDescription>{item.description}</SkillDescription>
+                                </SkillBox>
+                            );
+                        })}
+                    </SkillsLine>
+                    <SkillsLine className="skillsList">
+                        {ProgrammingTools.map((item, index) => {
+                            return (
+                                <SkillBox key={item.key}>
+                                    <SkillImage src={item.image}/>
+                                    <SkillTitle>{item.title}</SkillTitle>
+                                    <SkillLevel className="tool">Level: {item.level}</SkillLevel>
+                                </SkillBox>
+                            );
+                        })}
+                    </SkillsLine>
+                </Container>
 
                 <Subtitle>Companies</Subtitle>
                 <Container>
