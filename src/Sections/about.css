@@ -1,9 +1,12 @@
-#about {
-    padding-top: 80px;
-    height: 50vh;
-    background-color: red;
+* {
+    font-family: 'Cantata One';
 }
 
-#about h1 {
-    margin-top: 30vh;
+.section-active {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-closed {
+    display: none;
 }

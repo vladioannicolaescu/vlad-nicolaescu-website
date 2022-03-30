@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import {FaBars, FaTimes} from 'react-icons/fa'
+import styled from 'styled-components';
+import {FaBars, FaTimes} from 'react-icons/fa';
 
 export const Nav = styled.nav`
     background: #000;
@@ -59,7 +59,7 @@ export const CloseSign = styled(FaTimes)`
         font-size: 1.8rem;
         cursor: pointer;
     }
-`
+`;
 
 export const NavMenu = styled.div`
     display: flex;
