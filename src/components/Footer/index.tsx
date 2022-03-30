@@ -11,7 +11,7 @@ const FooterBar = () => {
                 <SocialMedia>
                     {SocialMediaLinks.map((item, index) => {
                             return (
-                                <SocialMediaLink href={item.href} target="_blank">
+                                <SocialMediaLink href={item.href} target="_blank" key={item.key}>
                                     <FontAwesomeIcon icon={item.icon} className="icon"/>
                                 </SocialMediaLink>
                             );

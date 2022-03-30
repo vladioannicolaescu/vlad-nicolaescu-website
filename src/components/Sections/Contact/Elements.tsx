@@ -111,5 +111,19 @@ export const AlertFail = styled.div`
     font-size: 1.5rem;
 
     display: none;
+`;
 
+export const AlertWarning = styled.div`
+    color: #aa5502;
+    background: #fff3cd;
+    width: 100%;
+    height: 75px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+
+    display: none;
 `;

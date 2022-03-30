@@ -25,7 +25,7 @@ const NavBar = () => {
                 <NavMenu>
                     {SectionLinks.map((item, index) => {
                         return (
-                            <NavAnchor href={item.path} onClick={e => smoothScroll(e, item.path.substr(1))}>
+                            <NavAnchor href={item.path} onClick={e => smoothScroll(e, item.path.substr(1))} key={item.key}>
                                 {item.title}
                             </NavAnchor>
                         );
@@ -34,7 +34,7 @@ const NavBar = () => {
                 <NavBtn>
                     {SocialMediaLinks.map((item, index) => {
                             return (
-                                <SocialMediaLink href={item.href} target="_blank">
+                                <SocialMediaLink href={item.href} target="_blank" key={item.key}>
                                     <FontAwesomeIcon icon={item.icon} className="icon"/>
                                 </SocialMediaLink>
                             );
@@ -49,7 +49,7 @@ const NavBar = () => {
                             <NavAnchor href={item.path} className="menu-link" onClick={e => {
                                     showSidebar();
                                     smoothScroll(e, item.path.substr(1));
-                                }}>
+                                }} key={item.key}>
                                     {item.title}
                             </NavAnchor>
                         );
@@ -58,7 +58,7 @@ const NavBar = () => {
                     <SidebarSocial>
                         {SocialMediaLinks.map((item, index) => {
                             return (
-                                <SocialMediaLink href={item.href} target="_blank">
+                                <SocialMediaLink href={item.href} target="_blank" key={item.key}>
                                     <FontAwesomeIcon icon={item.icon} className="icon"/>
                                 </SocialMediaLink>
                             );
