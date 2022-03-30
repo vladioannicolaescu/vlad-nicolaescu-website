@@ -1,3 +1,11 @@
 * {
     font-family: 'Cantata One';
 }
+
+.form-invisible {
+    display: none;
+}
+
+.form-visible {
+    display: block;
+}
