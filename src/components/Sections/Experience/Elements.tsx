@@ -9,11 +9,23 @@ export const Container = styled.div`
     height: fit-content;
 `;
 
+export const AwardsLine = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+    }
+`;
+
 export const HorizontalLine = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     border: 2px solid #555;
     padding: 30px 0;
     margin: 25px 0;
@@ -76,4 +88,35 @@ export const Period = styled.h2`
 
 export const Location = styled.h3`
     font-weight: 500;
+`;
+
+export const Award = styled.div`
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #555;
+    padding: 30px 0;
+    margin: 25px calc(5vw / 6);
+    background: #eeeeee;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        width: 80vw;
+    }
 `;

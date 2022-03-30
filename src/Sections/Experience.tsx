@@ -1,6 +1,6 @@
 import React from 'react';
 import './experience.css';
-import {Container, Subtitle, HorizontalLine, Side, CompanyImage, CompanyInfo, Position, Period, Location} from '../components/Sections/Experience/Elements';
+import {Container, AwardsLine, Subtitle, HorizontalLine, Side, Award, CompanyImage, CompanyInfo, Position, Period, Location} from '../components/Sections/Experience/Elements';
 import {TitleLine, DesignLine, Title} from '../components/utils/Elements';
 
 function ExperienceSection() {
@@ -60,6 +60,31 @@ function ExperienceSection() {
                         </Side>
                     </HorizontalLine>
                 </Container>
+
+                <Subtitle>Awards</Subtitle>
+                <AwardsLine>
+                    <Award>
+                        <CompanyInfo>
+                            <Position>Silver Medal - National Mathematics Olympiad</Position>
+                            <Period>April 2011</Period>
+                            <Location>Bistrita-Nasaud, Romania</Location>
+                        </CompanyInfo>
+                    </Award>
+                    <Award>
+                        <CompanyInfo>
+                            <Position>Bronze Medals - National Mathematics Olympiad</Position>
+                            <Period>April 2012, 2013</Period>
+                            <Location>Sighisoara & Sibiu, Romania</Location>
+                        </CompanyInfo>
+                    </Award>
+                    <Award>
+                        <CompanyInfo>
+                            <Position>Semi-finalist - First Tech Challenge Romania</Position>
+                            <Period>March 2018</Period>
+                            <Location>Bucharest, Romania</Location>
+                        </CompanyInfo>
+                    </Award>
+                </AwardsLine>
 
             </Container>
         </div>
