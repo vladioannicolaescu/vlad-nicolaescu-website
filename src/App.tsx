@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import HomeSection from './Sections/Home';
 import AboutSection from './Sections/About';
+import ExperienceSection from './Sections/Experience';
 import PortfolioSection from './Sections/Portfolio';
 import ContactSection from './Sections/Contact';
 import FooterBar from './components/Footer';
@@ -14,6 +15,7 @@ function App() {
       <NavBar/>
       <HomeSection/>
       <AboutSection/>
+      <ExperienceSection/>
       <PortfolioSection/>
       <ContactSection/>
       <FooterBar/>

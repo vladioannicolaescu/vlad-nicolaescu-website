@@ -1,21 +1,24 @@
 import React from 'react';
-import './contact.css';
+import './experience.css';
+import {} from '../components/Sections/Portfolio/Elements';
 import {Container, TitleLine, DesignLine, Title} from '../components/utils/Elements';
+import { Subtitle } from '../components/Sections/Home/Elements';
 
-function ContactSection() {
+function ExperienceSection() {
     return (
-        <div id="contact">
+        <div id="experience">
             <Container>
                 <TitleLine>
                     <DesignLine/>
                     <Title id="title">
-                        Contact
+                        Experience
                     </Title>
                     <DesignLine/>
                 </TitleLine>
+
             </Container>
         </div>
     )
 }
 
-export default ContactSection;
+export default ExperienceSection;

@@ -12,6 +12,11 @@ export const SectionLinks = [
     className: 'nav-link'
   },
   {
+    title: 'Skills & Experience',
+    path: '#experience',
+    className: 'nav-link'
+  },
+  {
     title: 'Portfolio',
     path: '#portfolio',
     className: 'nav-link'

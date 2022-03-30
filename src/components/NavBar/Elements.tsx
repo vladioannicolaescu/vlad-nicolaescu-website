@@ -129,6 +129,8 @@ export const SidebarSocial = styled.div`
 `;
 
 export const Sidebar = styled.div`
+    text-align: center;
+    
     .sidebar-active {
         top: 80px;
         right: 0;

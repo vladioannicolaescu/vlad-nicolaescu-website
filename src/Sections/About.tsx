@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './about.css';
-import {Container, TitleLine, DesignLine, Title, DesrciptionLine, AboutMePicture, AboutMeIntro, Subtitle, Text, ExtendButton, MoreList, Section, SectionTitle, DownArrow, Unextended, Extended} from '../components/Sections/About/Elements'; 
+import {DesrciptionLine, AboutMePicture, AboutMeIntro, Text, ExtendButton, MoreList, Section, SectionTitle, DownArrow, Unextended, Extended} from '../components/Sections/About/Elements'; 
+import {Container, TitleLine, DesignLine, Title, Subtitle} from '../components/utils/Elements';
 
 function AboutSection() {
 
