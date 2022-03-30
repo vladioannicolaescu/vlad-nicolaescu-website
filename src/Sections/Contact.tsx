@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import './contact.css';
 import {Container, TitleLine, DesignLine, Title} from '../components/utils/Elements';
 import {HorizontalContainer, ContactForm, Subtitle, Box, BoxTitle, BoxInput, BoxMessage, ApprovalText, ApprovalSection, Checkbox, SendButton, AlertSuccess, AlertFail, AlertWarning} from '../components/Sections/Contact/Elements';
+import './contact.css';
 import emailjs, {init} from '@emailjs/browser';
 
 function ContactSection() {
@@ -11,46 +11,45 @@ function ContactSection() {
     const [warningState, setWarning] = useState(false);
     const [approvedCondition, setApprovedCondition] = useState(false);
 
-    const formSent = () => setSuccess(!successState);
-    const formFail = () => setFail(!failState); 
-    const formWarn = () => setWarning(!warningState);
-    const approved = () => setApprovedCondition(!approvedCondition)
+    const approved = () => setApprovedCondition(!approvedCondition);
 
-    function sendEmail(e: { preventDefault: () => void; }) {
-
+    async function sendEmail(e: { preventDefault: () => void; }) {
         if (!approvedCondition) {
+            var form = document.getElementById("emailForm") as HTMLFormElement;
+            form.reset();
             console.log("You need to check the box to submit the message");
-            // alertWarning.style = "display: block; ";
-            return;
-        }
+            setWarning(true);
+            setTimeout(function () {
+                setWarning(false);
+                console.log(warningState);
+            }, 5000);
+        } else {
 
-        var alertSuccess = document.getElementById("alertSuccess")!;
-        var alertFail = document.getElementById("alertFail")!;
+            const userId = process.env.REACT_APP_USER_ID as string;
+            const serviceId = process.env.REACT_APP_SERVICE_ID as string;
+            const templateId = process.env.REACT_APP_TEMPLATE_ID as string;
 
-        const userId = process.env.REACT_APP_USER_ID as string;
-        const serviceId = process.env.REACT_APP_SERVICE_ID as string;
-        const templateId = process.env.REACT_APP_TEMPLATE_ID as string;
-
-        e.preventDefault();
-        init(userId);
-        emailjs.sendForm(serviceId, templateId, '#emailForm', process.env.REACT_APP_USER_ID)
-            .then((result: { text: any; }) => {
-                var form = document.getElementById("emailForm") as HTMLFormElement;
-                form.reset();
-                console.log("Message Sent, We will get back to you shortly", result.text);
-                // alertSuccess.style = "display: block; ";
-                setTimeout(function () {
-                    // alertSuccess.style = "display: none; ";
-                }, 2000);
-            },
-                (error: { text: any; }) => {
-                    // alertFail.style = "display: block ";
+            e.preventDefault();
+            init(userId);
+            emailjs.sendForm(serviceId, templateId, '#emailForm', process.env.REACT_APP_USER_ID)
+                .then((result: { text: any; }) => {
+                    var form = document.getElementById("emailForm") as HTMLFormElement;
+                    form.reset();
+                    console.log("Message Sent, We will get back to you shortly", result.text);
+                    setSuccess(true);
                     setTimeout(function () {
-                        // alertFail.style = "display: none ";
-                    }, 2000);
-                    console.log("An error occurred, Please try again", error.text);
-            }
-        );
+                        setSuccess(false);
+                    }, 5000);
+                },
+                    (error: { text: any; }) => {
+                        setFail(true);
+                        setTimeout(function () {
+                            setFail(false);
+                        }, 5000);
+                        console.log("An error occurred, Please try again", error.text);
+                }
+            );
+        }
     }
 
     return (

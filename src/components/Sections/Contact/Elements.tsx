@@ -18,7 +18,7 @@ export const Subtitle = styled.h2`
 
 export const ContactForm = styled.form`
     margin: 50px auto;
-    width: 50vw;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,13 +89,7 @@ export const AlertSuccess = styled.div`
     width: 100%;
     height: 75px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: 1.5rem;
-
-    display: none;
 `;
 
 export const AlertFail = styled.div`
@@ -104,13 +98,7 @@ export const AlertFail = styled.div`
     width: 100%;
     height: 75px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: 1.5rem;
-
-    display: none;
 `;
 
 export const AlertWarning = styled.div`
@@ -119,11 +107,5 @@ export const AlertWarning = styled.div`
     width: 100%;
     height: 75px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: 1.5rem;
-
-    display: none;
 `;

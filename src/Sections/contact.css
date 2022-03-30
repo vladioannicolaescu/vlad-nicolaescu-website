@@ -2,10 +2,13 @@
     font-family: 'Cantata One';
 }
 
-.form-invisible {
-    display: none;
+.form-visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.form-visible {
-    display: block;
+.form-invisible {
+    display: none;
 }
