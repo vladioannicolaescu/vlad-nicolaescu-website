@@ -73,9 +73,7 @@ export const MoreDetailsBtn = styled.button`
     box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
 `;
 
-export const Details = styled.div`
-    display: none;
-`;
+export const Details = styled.div``;
 
 export const DetailsParagraph = styled.p`
     padding: 10px 50px;

@@ -7,6 +7,10 @@ import {ProjectList} from '../components/Projects';
 
 function PortfolioSection() {
 
+    const [moreDetails, setDetailsStates] = useState(0);
+
+    const moreDetailsPressed = (index: number) => index !== moreDetails ? setDetailsStates(index) : setDetailsStates(0);
+
     return (
         <div id="portfolio">
             <Container>
@@ -29,8 +33,8 @@ function PortfolioSection() {
                                         <ProjectOwner>{item.owner}</ProjectOwner>
                                         <ProjectTechs>{item.techs}</ProjectTechs>
                                     </ProjectVisible>
-                                    <MoreDetailsBtn>More Details</MoreDetailsBtn>
-                                    <Details>
+                                    <MoreDetailsBtn onClick={() => moreDetailsPressed(item.key)}>More Details</MoreDetailsBtn>
+                                    <Details className={item.key === moreDetails ? "visible" : "invisible"}>
                                         {item.details.map((paragraph, index) => {
                                             return (
                                                 <DetailsParagraph key={item.key * 100 + index}>{paragraph}</DetailsParagraph>
