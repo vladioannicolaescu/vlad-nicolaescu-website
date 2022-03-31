@@ -19,8 +19,8 @@ export const SkillsLine = styled.div`
     width: 80vw;
     padding: 30px 0;
     margin: 25px 0;
-    background: #0072ce;
-    border: 2px solid #0061bd;
+    border-top: 2px solid #555;
+    border-bottom: 2px solid #555;
     border-radius: 10px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 `;
@@ -34,6 +34,8 @@ export const SkillBox = styled.div`
     text-align: center;
     background: white;
     border-radius: 20px;
+    border-left: 2px solid #555;
+    border-right: 2px solid #555;
     box-shadow: 5px 5px rgba(255, 255, 255, 0.5);
     min-width: 250px;
     height: 350px;
@@ -68,10 +70,10 @@ export const HorizontalLine = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border: 2px solid #555;
+    border-top: 2px solid #555;
+    border-bottom: 2px solid #555;
     padding: 30px 0;
     margin: 25px 0;
-    background: #eeeeee;
     border-radius: 10px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 
@@ -153,10 +155,10 @@ export const Award = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 2px solid #555;
+    border-top: 2px solid #555;
+    border-bottom: 2px solid #555;
     padding: 30px 0;
     margin: 25px calc(5vw / 6);
-    background: #eeeeee;
     border-radius: 10px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 
