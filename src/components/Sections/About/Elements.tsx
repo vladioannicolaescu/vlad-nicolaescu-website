@@ -20,6 +20,10 @@ export const DesrciptionLine = styled.div`
     @media screen and (max-width: 1000px) {
         flex-direction: column;
     }
+
+    @media screen and (max-width: 500px) {
+        margin: 20px auto;
+    }
 `;
 
 export const AboutMePicture = styled.img`
@@ -39,6 +43,10 @@ export const AboutMeIntro = styled.div`
 
     @media screen and (max-width: 1000px) {
         width: 80vw;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 90vw;
     }
 `;
 
@@ -77,6 +85,10 @@ export const Unextended = styled.a`
     justify-content: space-between;
     width: 100%;
     padding: 0 50px;
+
+    @media screen and (max-width: 500px) {
+        padding: 0;
+    }
 `;
 
 export const SectionTitle = styled.h1`
@@ -85,11 +97,16 @@ export const SectionTitle = styled.h1`
 
 export const DownArrow = styled(FaAngleDown)`
     color: #777;
-    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
     right: 0;
 `;
 
 export const Extended = styled.div`
     margin: 25px auto;
+
+    @media screen and (max-width: 500px) {
+        width: 80vw;
+    }
 `;
 

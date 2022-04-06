@@ -7,6 +7,10 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     height: fit-content;
+
+    @media screen and (max-width: 500px) {
+        padding: 50px 5vw;
+    }
 `;
 
 export const TitleLine = styled.div`
