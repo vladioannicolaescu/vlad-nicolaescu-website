@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './about.css';
 import {DesrciptionLine, AboutMePicture, AboutMeIntro, Text, ExtendButton, MoreList, Section, SectionTitle, DownArrow, Unextended, Extended} from '../components/Sections/About/Elements'; 
 import {Container, TitleLine, DesignLine, Title, Subtitle} from '../components/utils/Elements';
+import { Slide } from "react-awesome-reveal";
 
 function AboutSection() {
 
@@ -31,10 +32,11 @@ function AboutSection() {
                 </TitleLine>
 
                 <DesrciptionLine>
+                    <Slide triggerOnce direction="left" duration={1000}>
                     <AboutMeIntro>
-                        <Subtitle>
-                            About Me
-                        </Subtitle>
+                            <Subtitle>
+                                About Me
+                            </Subtitle>
                         <Text>
                             I am a hard-working computing student, aiming to push myself to the limits and learn as much as possible. I am passionate about developing Web and Mobile applications, Machine Learning, Robotics, and Computer Vision. Although I have 10+ years of experience in C/C++, my favorite programming language is Java, as I enjoy working at a higher level and using Object-Oriented Programming.
                         </Text>
@@ -45,7 +47,10 @@ function AboutSection() {
                             More About Me
                         </ExtendButton>
                     </AboutMeIntro>
-                    <AboutMePicture src="../images/summer-2015-removebg.png"/>
+                    </Slide>
+                    <Slide triggerOnce direction="right" duration={1000}>
+                        <AboutMePicture src="../images/summer-2015-removebg.png"/>
+                    </Slide>
                 </DesrciptionLine>
 
                 <MoreList className={moreBtnPressed ? 'section-active' : 'section-closed'}>

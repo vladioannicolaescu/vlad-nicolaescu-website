@@ -70,6 +70,7 @@ export const HorizontalLine = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    min-width: fit-content;
     border-top: 2px solid #555;
     border-bottom: 2px solid #555;
     padding: 30px 0;

@@ -9,23 +9,23 @@ const NavBar = () => {
 
     const showSidebar = () => setSidebar(!sidebar);
 
-    function smoothScroll(event: { preventDefault: () => void; }, elemId: string) {
-        let elem = document.getElementById(elemId);
-        event.preventDefault();
-        elem && elem.scrollIntoView({ behavior: "smooth", block: "start"});
-    }
+    // function smoothScroll(event: { preventDefault: () => void; }, elemId: string) {
+    //     let elem = document.getElementById(elemId);
+    //     event.preventDefault();
+    //     elem && elem.scrollIntoView({ behavior: "smooth", block: "start"});
+    // }
 
     return (
         <div className="navigation">
             <Nav>
-                <NavAnchor href ="#home" onClick={e => smoothScroll(e, "home")}>
+                <NavAnchor href ="#home">
                     <img src={require("../../images/image-removebg-preview.png")} alt="logo" />
                 </NavAnchor>
                 {!sidebar ? <Bars onClick={showSidebar}/> : <CloseSign onClick={showSidebar}/>}
                 <NavMenu>
                     {SectionLinks.map((item, index) => {
                         return (
-                            <NavAnchor href={item.path} onClick={e => smoothScroll(e, item.path.substr(1))} key={item.key}>
+                            <NavAnchor href={item.path} key={item.key}>
                                 {item.title}
                             </NavAnchor>
                         );
@@ -48,7 +48,6 @@ const NavBar = () => {
                         return (
                             <NavAnchor href={item.path} className="menu-link" onClick={e => {
                                     showSidebar();
-                                    smoothScroll(e, item.path.substr(1));
                                 }} key={item.key}>
                                     {item.title}
                             </NavAnchor>

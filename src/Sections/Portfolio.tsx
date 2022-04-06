@@ -4,6 +4,7 @@ import {} from '../components/Sections/Portfolio/Elements';
 import {Container, TitleLine, DesignLine, Title} from '../components/utils/Elements';
 import {ProjectListing, ProjectBox, ProjectImage, ProjectInfo, ProjectVisible, ProjectTitle, ProjectOwner, ProjectTechs, Link, MoreDetailsBtn, Details, DetailsParagraph} from '../components/Sections/Portfolio/Elements';
 import {ProjectList} from '../components/Projects';
+// import { Slide } from 'react-awesome-reveal';
 
 function PortfolioSection() {
 
@@ -25,29 +26,31 @@ function PortfolioSection() {
                 <ProjectListing>
                     {ProjectList.map((item, index) => {
                         return (
-                            <ProjectBox key={item.key}>
-                                <ProjectImage src={item.image}/>
-                                <ProjectInfo>
-                                    <ProjectVisible>
-                                        <ProjectTitle>{item.title}</ProjectTitle>
-                                        <ProjectOwner>{item.owner}</ProjectOwner>
-                                        <ProjectTechs>Techs: {item.techs}</ProjectTechs>
-                                    </ProjectVisible>
-                                    {
-                                        item.link !== '' ? <Link href={"//" + item.link} target="_blank" rel="noreferrer" onClick={() => {}}>
-                                            {item.title === "VirtualMed" ? "Try Web Version" : "Visit Website"}
-                                        </Link> : <></>
-                                    }
-                                    <MoreDetailsBtn onClick={() => moreDetailsPressed(item.key)}>More Details</MoreDetailsBtn>
-                                    <Details className={item.key === moreDetails ? "visible" : "invisible"}>
-                                        {item.details.map((paragraph, index) => {
-                                            return (
-                                                <DetailsParagraph key={item.key * 100 + index}>{paragraph}</DetailsParagraph>
-                                            )
-                                        })}
-                                    </Details>
-                                </ProjectInfo>
-                            </ProjectBox>
+                            // <Slide triggerOnce direction="up" duration={2000} key={item.key}>
+                                <ProjectBox key={item.key}>
+                                    <ProjectImage src={item.image}/>
+                                    <ProjectInfo>
+                                        <ProjectVisible>
+                                            <ProjectTitle>{item.title}</ProjectTitle>
+                                            <ProjectOwner>{item.owner}</ProjectOwner>
+                                            <ProjectTechs>Techs: {item.techs}</ProjectTechs>
+                                        </ProjectVisible>
+                                        {
+                                            item.link !== '' ? <Link href={"//" + item.link} target="_blank" rel="noreferrer" onClick={() => {}}>
+                                                {item.title === "VirtualMed" ? "Try Web Version" : "Visit Website"}
+                                            </Link> : <></>
+                                        }
+                                        <MoreDetailsBtn onClick={() => moreDetailsPressed(item.key)}>More Details</MoreDetailsBtn>
+                                        <Details className={item.key === moreDetails ? "visible" : "invisible"}>
+                                            {item.details.map((paragraph, index) => {
+                                                return (
+                                                    <DetailsParagraph key={item.key * 100 + index}>{paragraph}</DetailsParagraph>
+                                                )
+                                            })}
+                                        </Details>
+                                    </ProjectInfo>
+                                </ProjectBox>
+                            // </Slide>
                         );
                     })}
                 </ProjectListing>

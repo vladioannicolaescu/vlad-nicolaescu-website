@@ -49,6 +49,7 @@ export const TitleGroup = styled.div`
     align-items: center;
     justify-content: center;
     margin: 0 5vw;
+    min-width: 90%;
 
     img {
         height: 300px;

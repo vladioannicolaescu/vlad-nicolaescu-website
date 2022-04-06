@@ -115,7 +115,7 @@ export const ProgrammingTools = [
     key: 17,
     image: '../images/react-icon.png',
     title: 'React',
-    level: 'Expert',
+    level: 'Advanced-Intermediate',
   },
   {
     key: 18,
