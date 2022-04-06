@@ -18,7 +18,7 @@ export const LandingPictureCover = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 10vh;
     padding-bottom: 10vh;
 
@@ -39,7 +39,8 @@ export const Motto = styled.h1`
     font-weight: 600;
 
     @media screen and (max-width: 700px) {
-        display: none;
+        font-size: 2rem;
+        // display: none;
     }
 `;
 
