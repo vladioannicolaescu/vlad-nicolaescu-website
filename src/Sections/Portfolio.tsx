@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './portfolio.css';
 import {} from '../components/Sections/Portfolio/Elements';
 import {Container, TitleLine, DesignLine, Title} from '../components/utils/Elements';
-import {ProjectListing, ProjectBox, ProjectImage, ProjectInfo, ProjectVisible, ProjectTitle, ProjectOwner, ProjectTechs, MoreDetailsBtn, Details, DetailsParagraph} from '../components/Sections/Portfolio/Elements';
+import {ProjectListing, ProjectBox, ProjectImage, ProjectInfo, ProjectVisible, ProjectTitle, ProjectOwner, ProjectTechs, Link, MoreDetailsBtn, Details, DetailsParagraph} from '../components/Sections/Portfolio/Elements';
 import {ProjectList} from '../components/Projects';
 
 function PortfolioSection() {
@@ -33,6 +33,11 @@ function PortfolioSection() {
                                         <ProjectOwner>{item.owner}</ProjectOwner>
                                         <ProjectTechs>Techs: {item.techs}</ProjectTechs>
                                     </ProjectVisible>
+                                    {
+                                        item.link !== '' ? <Link href={"//" + item.link} target="_blank" rel="noreferrer" onClick={() => {}}>
+                                            {item.title === "VirtualMed" ? "Try Web Version" : "Visit Website"}
+                                        </Link> : <></>
+                                    }
                                     <MoreDetailsBtn onClick={() => moreDetailsPressed(item.key)}>More Details</MoreDetailsBtn>
                                     <Details className={item.key === moreDetails ? "visible" : "invisible"}>
                                         {item.details.map((paragraph, index) => {

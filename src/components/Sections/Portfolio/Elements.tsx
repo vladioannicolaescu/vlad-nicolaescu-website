@@ -53,7 +53,7 @@ export const ProjectVisible = styled.div`
     height: 200px;
     postition: relative;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1050px) {
         height: 250px;
     }
 `;
@@ -70,8 +70,28 @@ export const ProjectTechs = styled.h3`
     margin: 5px auto;
 `;
 
+export const Link = styled.a`
+    margin-top: 25px;
+    margin-bottom: 2.5px;
+    padding-top: 10px;
+    background: #000;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        background: #fff;
+        color: #000;
+    }
+`;
+
 export const MoreDetailsBtn = styled.button`
-    margin: 25px auto;
+    margin-top: 2.5px;
+    margin-bottom: 25px;
     background: #000;
     color: #fff;
     height: 40px;
@@ -79,6 +99,11 @@ export const MoreDetailsBtn = styled.button`
     font-size: 1rem;
     border-radius: 10px;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    
+    &:hover {
+        background: #fff;
+        color: #000;
+    }
 `;
 
 export const Details = styled.div``;

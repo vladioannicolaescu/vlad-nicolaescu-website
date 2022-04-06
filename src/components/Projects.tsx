@@ -10,32 +10,47 @@ export const ProjectList = [
             "VirtualMed has been initially developed as a college project. Based on the extremely positive feedback received from both patients and doctors, the application is being further developed at the moment. The main areas of improvement are the graphics for the human body (have a 3D representation), and the precision of the symptom checker, which is going to be significantly improved by collaborating with specialists and using Artificial Intelligence (Neural Networks).",
             "*The repository for this project currently is private, but can be available to recruiters privately via direct request."
         ],
+        link: 'virtualmed.herokuapp.com/#/',
     },
     {
         key: 2,
+        image: '../images/ProgresivMedical.png',
+        title: 'Progresiv Medical Website',
+        owner: 'Web Development Project',
+        techs: 'React, TypeScript, Git',
+        details: [
+            "This webpage is a presentation of the Progresiv Medical Association, based in Bucharest, Romania. The Association holds workshops for Med School students and the intention of the webpage is to promote and to provide information about the services the association provides.",
+            "*The repository for this project currently is private, but can be available to recruiters privately via direct request."
+        ],
+        link: 'progresiv-medical.com',
+    },
+    {
+        key: 3,
         image: '../images/AnalizaEconomicaScreenshot.png',
         title: 'Economic Analysis Website',
         owner: 'Web Development Project',
-        techs: 'React, Git',
+        techs: 'React, JavaScript, Git',
         details: [
             "The website aims to provide companies with a straightforward process that generates a detailed financial analysis based on uploaded data. It has been developed in collaboration with an Economics Professor at the University of Bucharest, who provided all the required details related to the mathematical computations and the side comments included in the report.",
             "The website and the report are available only in Romanian now but may become available in English soon.",
             "*The repository for this project currently is private, but can be available to recruiters privately via direct request."
         ],
+        link: 'analizaeconomica.netlify.app',
     },
-    {
-        key: 3,
-        image: '../images/CreateEventFITS.png',
-        title: 'FITS Web Application',
-        owner: 'Personal project. Local Start-up',
-        techs: 'HTML, CSS, JavaScript, NodeJS, SQL, MySQL, Git',
-        details: [
-            "Currently developing a web application, which will be followed by a mobile application, that is intended to serve as a social platform for the sports community and facilitate reservations for sports venues. This application is a complex digital touchpoint that involves real-time user interactions, and which maintains a consistent internal state, making use of a server-side database.",
-            "Some of the features already built: user registration & authentication, user profile, direct connections between users (almost similar to Facebook friendships and LinkedIn connections), event creation & listing.",
-            "Features to be added soon: mobile application, for both Android and IOS, user rating, actual venues for better and more accurate System Tesing purposes.",
-            "*The repository for this project currently is private, but can be available to recruiters privately via direct request."
-        ],
-    },
+    // {
+    //     key: 3,
+    //     image: '../images/CreateEventFITS.png',
+    //     title: 'FITS Web Application',
+    //     owner: 'Personal project. Local Start-up',
+    //     techs: 'HTML, CSS, JavaScript, NodeJS, SQL, MySQL, Git',
+    //     details: [
+    //         "Currently developing a web application, which will be followed by a mobile application, that is intended to serve as a social platform for the sports community and facilitate reservations for sports venues. This application is a complex digital touchpoint that involves real-time user interactions, and which maintains a consistent internal state, making use of a server-side database.",
+    //         "Some of the features already built: user registration & authentication, user profile, direct connections between users (almost similar to Facebook friendships and LinkedIn connections), event creation & listing.",
+    //         "Features to be added soon: mobile application, for both Android and IOS, user rating, actual venues for better and more accurate System Tesing purposes.",
+    //         "*The repository for this project currently is private, but can be available to recruiters privately via direct request."
+    //     ],
+    //     link: '',
+    // },
     {
         key: 4,
         image: '../images/WebsiteScreenshot.png',
@@ -46,6 +61,7 @@ export const ProjectList = [
             "Building and maintaining this website has its main purpose helping me gain valuable experience as a front-end developer. I am not only using it to introduce myself to the world and share personal and professional information, but also to improve myself continuously as a developer and create or discover various features and technologies that would fit in.",
             "*The repository for this project currently is private, but can be available to recruiters privately via direct request."
         ],
+        link: 'vladnicolaescu.com',
     },
     {
         key: 5,
@@ -57,6 +73,7 @@ export const ProjectList = [
             "First Tech Challenge is a world-wide robotics competition. The robots participating must be user-controllable, but should also have autonomus features. In the autonomus mode, the robot should be able to complete various tasks, related to the year's general theme. The software I built allowed robots to move in every direction (including climbing), collect and throw balls and cubes, detect colours and scan images. (one of the robots is presented in the background).",
             "*The repository for this project currently is private, but can be available to recruiters privately via direct request."
         ],
+        link: '',
     },
     {
         key: 6,
@@ -72,6 +89,7 @@ export const ProjectList = [
             "Task 3 - Virtual Memory: Task 3 focuses on the implementation of virtual memory. We had to implement lazy-loading, memory-mapped files as well as an eviction algorithm for the pages and a swap table.",
             "*The repository for this project is private due to Imperial College London Privacy Policy, but can be available to recruiters privately via direct request."
         ],
+        link: '',
     },
     {
         key: 7,
@@ -85,6 +103,7 @@ export const ProjectList = [
             "Second Task - Backend: In this task, we need to generate machine code (synthesizing output in the target language, maintaining the semantic meaning of the input file).",
             "*The repository for this project is private due to Imperial College London Privacy Policy, but can be available to recruiters privately via direct request."
         ],
+        link: '',
     },
     {
         key: 8,
@@ -99,5 +118,6 @@ export const ProjectList = [
             "Part 3 - The Extension: As an extension for this project, we built a Chatbot that interacts with the user via the terminal. The chatbot was trained to adapt to various situations and answer appropriately to each one of them. Moreover, it tries to give different responses if a question is asked multiple times.",
             "*The repository for this project is private due to Imperial College London Privacy Policy, but can be available to recruiters privately via direct request."
         ],
+        link: '',
     },
 ];

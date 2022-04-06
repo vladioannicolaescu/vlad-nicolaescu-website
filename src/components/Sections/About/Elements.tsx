@@ -66,6 +66,11 @@ export const ExtendButton = styled.button`
     font-size: 1.4rem;
     border-radius: 10px;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        background: #fff;
+        color: #000;
+    }
 `;
 
 export const MoreList = styled.div`
