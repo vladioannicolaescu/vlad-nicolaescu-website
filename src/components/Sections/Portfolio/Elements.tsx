@@ -21,6 +21,10 @@ export const ProjectBox = styled.div`
     @media screen and (max-width: 1000px) {
         width: 60vw
     }
+
+    @media screen and (max-width: 500px) {
+        width: 80vw
+    }
 `;
 
 export const ProjectImage = styled.img`
@@ -48,6 +52,10 @@ export const ProjectInfo = styled.div`
 export const ProjectVisible = styled.div`
     height: 200px;
     postition: relative;
+
+    @media screen and (max-width: 1000px) {
+        height: 250px;
+    }
 `;
 
 export const ProjectTitle = styled.h1`
@@ -76,7 +84,7 @@ export const MoreDetailsBtn = styled.button`
 export const Details = styled.div``;
 
 export const DetailsParagraph = styled.p`
-    padding: 10px 50px;
+    padding: 10px;
     font-family: 'Cantata One';
     font-size: 1.2rem;
     font-weight: 500;
