@@ -34,7 +34,10 @@ export const Title = styled.h1`
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 0 50px;
-    white-space: nowrap;
+
+    @media screen and (min-width: 500px) {
+        white-space: nowrap;
+    }
 `;
 
 export const Subtitle = styled.h2`

@@ -46,7 +46,7 @@ export const ProjectInfo = styled.div`
 `;
 
 export const ProjectVisible = styled.div`
-    height: 150px;
+    height: 200px;
     postition: relative;
 `;
 

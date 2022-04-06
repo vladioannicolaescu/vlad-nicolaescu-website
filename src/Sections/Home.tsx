@@ -1,7 +1,7 @@
 import React from 'react';
 import './home.css';
 import {LandingPicture, LandingPictureCover, Motto, TitleGroup, TitleLine, DesignLine, Title, Subtitle, Locations, Location, Dot} from '../components/Sections/Home/Elements';
-import Typewriter, { TypewriterClass } from "typewriter-effect";
+import Typewriter from "typewriter-effect";
 
 function HomeSection() {
     return (
@@ -34,20 +34,20 @@ function HomeSection() {
                             Final Year MEng Student - Imperial College London
                         </Subtitle>
                         <img src="../images/image-removebg-preview.png" alt="" />
-                        <Locations>
-                            <Location>
-                                London
-                            </Location>
-                            <Dot/>
-                            <Location>
-                                Bucharest
-                            </Location>
-                            <Dot/>
-                            <Location>
-                                Zurich
-                            </Location>
-                        </Locations>
                     </TitleGroup>
+                    <Locations>
+                        <Location>
+                            London
+                        </Location>
+                        <Dot/>
+                        <Location>
+                            Bucharest
+                        </Location>
+                        <Dot/>
+                        <Location>
+                            Zurich
+                        </Location>
+                    </Locations>
                 </LandingPictureCover>
             </LandingPicture>
         </div>

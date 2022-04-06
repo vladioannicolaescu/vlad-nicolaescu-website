@@ -15,8 +15,8 @@ export const ProjectList = [
         key: 2,
         image: '../images/AnalizaEconomicaScreenshot.png',
         title: 'Economic Analysis Website',
-        owner: 'Web Development Project for Client',
-        techs: 'HTML, CSS, JavaScript, React, Git',
+        owner: 'Web Development Project',
+        techs: 'React, Git',
         details: [
             "The website aims to provide companies with a straightforward process that generates a detailed financial analysis based on uploaded data. It has been developed in collaboration with an Economics Professor at the University of Bucharest, who provided all the required details related to the mathematical computations and the side comments included in the report.",
             "The website and the report are available only in Romanian now but may become available in English soon.",

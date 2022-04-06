@@ -101,19 +101,20 @@ export const SidebarNav = styled.div`
     position: fixed;
     background: #000;
     height: calc(100vh - 80px);
-    width: 40vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: 0;
-    padding-top: 20vh;
+    padding-top: 10vh;
     right: -100%;
     z-index: 100;
 
     .menu-link {
         justify-content: center;
-        font-size: 2rem;
+        font-size: 1.75rem;
         height: 75px;
+        margin: 10px auto;
     }
 `;
 

@@ -6,18 +6,26 @@ export const LandingPicture = styled.div`
     background-size: cover;
     background-position: right;
     background-attachment: fixed;
-    height: 100vh;
+    height: fit-content;
+    min-height: 100vh;
 `;
 
 export const LandingPictureCover = styled.div`
     background: rgb(0, 0, 0, 0.75);
-    height: 100%;
+    height: fit-content;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    // @media screen and (max-width: 700px) {
+    //     padding-top: 5vh;
+    //     padding-bottom: 5vh;
+    // }
 `;
 
 export const Motto = styled.h1`
@@ -29,6 +37,10 @@ export const Motto = styled.h1`
     text-align: center;
     font-size: 2.5rem;
     font-weight: 600;
+
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
 `;
 
 export const TitleGroup = styled.div`
@@ -40,6 +52,12 @@ export const TitleGroup = styled.div`
 
     img {
         height: 300px;
+    }
+
+    @media screen and (max-width: 700px) {
+        img {
+            height: 200px;
+        }
     }
 
 `;
@@ -70,6 +88,10 @@ export const Title = styled.h1`
     margin-bottom: 50px;
     padding: 0 50px;
 
+    @media screen and (max-width: 700px) {
+        font-size: 2.5rem;
+    }
+
     @media screen and (min-width: 800px) {
         white-space: nowrap;
     }
@@ -83,6 +105,11 @@ export const Subtitle = styled.h2`
     justify-content: center;
     text-align: center;
     font-weight: 500;
+    margin: 5px auto;
+
+    @media screen and (max-width: 700px) {
+        font-size: 1.25rem;
+    }
 `;
 
 export const Locations = styled.div`
@@ -98,6 +125,10 @@ export const Location = styled.h2`
     margin: 10px 20px; 
     font-weight: 500;
     font-size: 2rem;
+
+    @media screen and (max-width: 700px) {
+        font-size: 1.25rem;
+    }
 `;
 
 export const Dot = styled.div`

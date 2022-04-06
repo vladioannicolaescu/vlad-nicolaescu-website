@@ -31,7 +31,7 @@ function PortfolioSection() {
                                     <ProjectVisible>
                                         <ProjectTitle>{item.title}</ProjectTitle>
                                         <ProjectOwner>{item.owner}</ProjectOwner>
-                                        <ProjectTechs>{item.techs}</ProjectTechs>
+                                        <ProjectTechs>Techs: {item.techs}</ProjectTechs>
                                     </ProjectVisible>
                                     <MoreDetailsBtn onClick={() => moreDetailsPressed(item.key)}>More Details</MoreDetailsBtn>
                                     <Details className={item.key === moreDetails ? "visible" : "invisible"}>

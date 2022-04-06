@@ -122,6 +122,12 @@ export const Subtitle = styled.h2`
 export const CompanyImage = styled.img`
     height: 100px;
     margin: 10px auto;
+
+    @media screen and (max-width: 500px) {
+        width: 75vw;
+        height: auto;
+        margin: 20px auto;
+    }
 `;
 
 export const CompanyInfo = styled.div`
@@ -131,12 +137,12 @@ export const CompanyInfo = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 10px auto;
+    margin: 20px auto;
 `;
 
 export const Position = styled.h1`
     font-weight: 600;
-    margin: 2.5px auto;
+    margin: 5px auto;
 `;
 
 export const Period = styled.h2`
