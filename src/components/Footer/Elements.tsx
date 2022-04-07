@@ -55,6 +55,7 @@ export const Cookies = styled.div`
     align-items: center;
     justify-content: center;
     margin: 10px;
+    align-text: center;
 `;
 
 export const CookiesTitle = styled.h3`

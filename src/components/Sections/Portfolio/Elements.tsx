@@ -41,7 +41,7 @@ export const ProjectInfo = styled.div`
     align-items: center;
     text-align: center;
     justify-content: center;
-    background: white;
+    background: #fefefe;
     padding: 50px 20px;
     margin-top: -175px;
     width: 85%;

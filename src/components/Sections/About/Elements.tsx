@@ -51,7 +51,7 @@ export const AboutMeIntro = styled.div`
 `;
 
 export const Text = styled.p`
-    padding: 10px 50px;
+    padding: 10px 0;
     font-family: 'Cantata One';
     font-size: 1.5rem;
     font-weight: 500;
