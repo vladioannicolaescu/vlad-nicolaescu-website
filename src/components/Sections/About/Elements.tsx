@@ -54,7 +54,7 @@ export const Text = styled.p`
     padding: 10px 0;
     font-family: 'Cantata One';
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
 
     a {
         text-decoration: none;
