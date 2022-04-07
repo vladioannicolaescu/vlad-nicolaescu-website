@@ -21,11 +21,6 @@ export const LandingPictureCover = styled.div`
     justify-content: space-around;
     padding-top: 10vh;
     padding-bottom: 10vh;
-
-    // @media screen and (max-width: 700px) {
-    //     padding-top: 5vh;
-    //     padding-bottom: 5vh;
-    // }
 `;
 
 export const Motto = styled.h1`
