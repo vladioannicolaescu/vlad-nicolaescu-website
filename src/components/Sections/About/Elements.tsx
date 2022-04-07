@@ -55,6 +55,11 @@ export const Text = styled.p`
     font-family: 'Cantata One';
     font-size: 1.5rem;
     font-weight: 500;
+
+    a {
+        text-decoration: none;
+        color: #0072ce;
+    }
 `;
 
 export const ExtendButton = styled.button`

@@ -4,7 +4,7 @@ export const SectionLinks = [
   {
     key: 1,
     title: 'Home',
-    path: '#home',
+    path: '#app',
     className: 'nav-link'
   },
   {

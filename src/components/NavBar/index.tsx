@@ -18,7 +18,7 @@ const NavBar = () => {
     return (
         <div className="navigation">
             <Nav>
-                <NavAnchor href ="#home">
+                <NavAnchor href ="#app">
                     <img src={require("../../images/image-removebg-preview.png")} alt="logo" />
                 </NavAnchor>
                 {!sidebar ? <Bars onClick={showSidebar}/> : <CloseSign onClick={showSidebar}/>}

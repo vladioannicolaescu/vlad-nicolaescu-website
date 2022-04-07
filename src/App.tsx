@@ -11,7 +11,7 @@ import FooterBar from './components/Footer';
 function App() {
   return (
     // For single-page implementation:
-    <>
+    <div id="app">
       <NavBar/>
       <HomeSection/>
       <AboutSection/>
@@ -19,7 +19,7 @@ function App() {
       <PortfolioSection/>
       <ContactSection/>
       <FooterBar/>
-    </>
+    </div>
 
     // For multi-page implementation: 
 
